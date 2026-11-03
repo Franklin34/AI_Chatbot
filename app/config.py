@@ -21,7 +21,8 @@ class Settings(BaseSettings):
     model: str | None = None  # falls back to DEFAULT_MODELS[provider]
     system_prompt: str = (
         "You are a friendly, concise assistant. Answer clearly, use Markdown "
-        "when it helps, and ask a clarifying question when a request is ambiguous."
+        "when it helps, and ask a clarifying question when a request is ambiguous. "
+        "Do not use LaTeX; write math and complexity in plain text or inline code."
     )
     max_tokens: int = Field(2048, ge=1)
     max_retries: int = Field(3, ge=0, le=6)

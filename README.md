@@ -4,7 +4,7 @@ A production-minded LLM chatbot: **FastAPI** backend, streaming UI, and a **prov
 
 Built to be small enough to read in ten minutes and solid enough to build on: typed config, retries with backoff, context-window management, rate limiting, tests, Docker and CI.
 
-<!-- Add a screenshot or GIF here: ![Demo](docs/demo.gif) -->
+<p align="center"><img src="docs/screenshot.png" alt="AI Chatbot streaming a Python answer with syntax-highlighted code" width="820"></p>
 
 ## Features
 
