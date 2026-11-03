@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Chatbot</title>
+<link rel="stylesheet" href="/static/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js" defer></script>
+<script src="/static/app.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="title">
+      <h1>AI Chatbot</h1>
+      <span id="model" class="badge" hidden></span>
+    </div>
+    <button id="reset" type="button" class="secondary">New conversation</button>
+  </header>
+
+  <main id="messages" aria-live="polite"></main>
+
+  <form id="form">
+    <textarea id="input" rows="1" placeholder="Message the assistant…  (Enter to send, Shift+Enter for a new line)" autofocus></textarea>
+    <button id="send" type="submit">Send</button>
+    <button id="stop" type="button" class="danger" hidden>Stop</button>
+  </form>
+</div>
+</body>
+</html>
